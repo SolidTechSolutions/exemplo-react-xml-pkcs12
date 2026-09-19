@@ -1,5 +1,11 @@
 # 🇧🇷 SolidSign API - Front-end de Exemplo: Assinatura XML com PKCS#12 (React)
 
+## ⚠️ Disponibilidade
+
+Este método (importação de certificado PKCS#12 direto no servidor) só está disponível em instâncias do SolidSign API rodando **on-premises** (localmente, na infraestrutura do próprio cliente). **Não está disponível na versão SaaS pública** do SolidSign.
+
+Motivo: a importação PKCS#12 mantém a chave privada decriptada em cache no servidor por até 2 horas — um risco aceitável numa instância on-premises própria, mas não numa instância SaaS compartilhada entre vários clientes. Se você usa o SaaS público, use `sign-hsm-cloud` (seu próprio PSC) ou a custódia KMS SolidSign em vez deste método.
+
 ## Como funciona
 
 Este front-end chama `POST /api/xml/sign/form` (`http://localhost:8080` por padrão) no back-end de exemplo, enviando o `pfxCode` de um certificado PKCS#12 já importado. O back-end assina o XML e devolve um `.zip`.
@@ -44,6 +50,12 @@ Abra `http://localhost:5173`, preencha o formulário e envie.
 ---
 
 # 🇬🇧 SolidSign API - Example Front-end: XML Signing with PKCS#12 (React)
+
+## ⚠️ Availability
+
+This method (server-side PKCS#12 certificate import) is only available on **on-premises** SolidSign API instances (running locally, on the customer's own infrastructure). **It is not available on the public SaaS** version of SolidSign.
+
+Why: PKCS#12 import keeps the decrypted private key cached on the server for up to 2 hours — an acceptable risk on your own on-premises instance, but not on a shared multi-tenant SaaS instance. If you use the public SaaS, use `sign-hsm-cloud` (your own PSC) or KMS SolidSign custody instead of this method.
 
 ## How it works
 
