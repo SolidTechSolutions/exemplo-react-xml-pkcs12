@@ -12,9 +12,15 @@ Este front-end chama `POST /api/xml/sign/form` (`http://localhost:8080` por padr
 
 ## Requisitos
 
-Rode este back-end de exemplo localmente:
+Rode **um** destes back-ends de exemplo localmente (portas diferentes — ajuste `backendUrl` no formulário pra combinar):
 
-- **Java**: [`exemplo-java-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-java-integracao-xml-pkcs12)
+- **Java** (porta 8080): [`exemplo-java-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-java-integracao-xml-pkcs12)
+- **C#** (porta 5093): [`exemplo-csharp-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-csharp-integracao-xml-pkcs12)
+- **JavaScript** (porta 8093): [`exemplo-javascript-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-javascript-integracao-xml-pkcs12)
+- **TypeScript** (porta 8093): [`exemplo-typescript-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-typescript-integracao-xml-pkcs12)
+- **Node.js** (porta 3093): [`exemplo-nodejs-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-nodejs-integracao-xml-pkcs12)
+- **PHP** (porta 8093): [`exemplo-php-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-php-integracao-xml-pkcs12)
+- **Python** (porta 8093): [`exemplo-python-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-python-integracao-xml-pkcs12)
 
 - Um token JWT válido (`POST /solidsign/auth/token`)
 - Um certificado PKCS#12 já importado (`POST /solidsign/dsig/certificates/pkcs12/import`) — o `id` retornado é o `pfxCode`
@@ -63,9 +69,15 @@ This front-end calls `POST /api/xml/sign/form` (`http://localhost:8080` by defau
 
 ## Requirements
 
-Run this example backend locally:
+Run **one** of these example backends locally (different ports — adjust `backendUrl` in the form to match):
 
-- **Java**: [`exemplo-java-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-java-integracao-xml-pkcs12)
+- **Java** (port 8080): [`exemplo-java-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-java-integracao-xml-pkcs12)
+- **C#** (port 5093): [`exemplo-csharp-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-csharp-integracao-xml-pkcs12)
+- **JavaScript** (port 8093): [`exemplo-javascript-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-javascript-integracao-xml-pkcs12)
+- **TypeScript** (port 8093): [`exemplo-typescript-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-typescript-integracao-xml-pkcs12)
+- **Node.js** (port 3093): [`exemplo-nodejs-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-nodejs-integracao-xml-pkcs12)
+- **PHP** (port 8093): [`exemplo-php-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-php-integracao-xml-pkcs12)
+- **Python** (port 8093): [`exemplo-python-integracao-xml-pkcs12`](https://github.com/SolidTechSolutions/exemplo-python-integracao-xml-pkcs12)
 
 - A valid JWT token (`POST /solidsign/auth/token`)
 - A PKCS#12 certificate already imported (`POST /solidsign/dsig/certificates/pkcs12/import`) — the returned `id` is the `pfxCode`
